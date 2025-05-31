@@ -1,5 +1,5 @@
 from docx import Document
-from typing import Dict, List
+from typing import Dict, List, Any
 
 
 def extract_docx_content(docx_path: str) -> Dict[str, Any]:

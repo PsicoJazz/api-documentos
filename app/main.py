@@ -5,7 +5,8 @@ import os
 import shutil
 from pathlib import Path
 import uuid
-from typing import Dict, Any
+from typing import Dict, List, Any
+
 
 # Importar serviços (com tratamento de erro)
 try:
@@ -190,4 +191,4 @@ async def download_document(request_id: str):
 # Para execução direta
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8000)

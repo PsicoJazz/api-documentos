@@ -1,7 +1,7 @@
 from docx import Document
 from docx.shared import Inches
 import os
-from typing import Dict, Any
+from typing import Dict, List, Any
 
 
 def fill_template(template_path: str, xml_data: Dict[str, Any], docx_content: Dict[str, Any], request_id: str) -> str:
